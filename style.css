@@ -14,6 +14,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     position:fixed;
+    z-index: 10000;
     top:0;
     background-color:#27374d;
     opacity: 0.9;
@@ -73,14 +74,99 @@ nav a{
 h1{
     font-family: 'Dancing Script', cursive;
     margin-top :60px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     text-align: center; 
     color: #e0bb6d;
     font-size: 3em;   
 }
-p{
-    background-color: gray;
+#description{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 1.2em;
 }
+#chambres{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 2em;
+
+}
+#lienreserver{
+    display: inline-block;
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    background-color:#27374d ;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    
+}
+#lienreserver:hover{
+    background-color: #e0bb6d;
+    color: black;
+    font-size: 2.2em;
+    border:2px groove ;
+    font-weight: bold;
+
+}
+#reserverchambre{
+    position: relative;
+}
+#chetsuite{
+    position: absolute;
+    left:-100px;
+    top: 150px;
+    color:white;
+    background-color:#27374d ;
+    width: 210px;
+    font-size: 2em;
+    text-align: center;
+
+}
+#bar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#barlanterne{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    margin-bottom: 20px;
+
+}
+
+
+#lecomptoire{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+#lecomptoirelanterne{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    margin-bottom: 20px;
+
+}
+
+
 .footer{
     display:flex;
     flex-direction: column;
@@ -156,6 +242,7 @@ p{
 
 #form-contact h2 ,#formulaire-reserver label{
     color: white;
+
 }
 
 
